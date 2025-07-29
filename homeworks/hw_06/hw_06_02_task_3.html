@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home work 6.2. Task 3</title>
+    <style>
+        *{
+            font-family: Arial, sans-serif;
+        }
+        form{
+            margin: 3%;
+            border: lightgray solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form div{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        form div input, form div button{
+            margin: 5px;
+            width: 500px;
+            height: 50px;
+            background-color: rgba(241, 239, 239, 0.91);
+            border-style: solid;
+            border-color: #bdb5b5;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+        .logo{
+            width: 35%;
+            margin: 10vh;
+        }
+        .input_submit, .button_submit{
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px ;
+            background-color: #3cacd1;
+            color: white;
+            font-weight: bold;
+        }
+        .h2_gray{
+            color: gray;
+            margin-top: 50px;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        .button_facebook{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            height: 50px;
+            margin-bottom: 30px;
+            border-style: none;
+        }
+        .div_button_facebook{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #0f0f7e;
+            font-weight: bold;
+            font-size: 36px;
+        }
+        .div_button_facebook img{
+            height: 50px;
+        }
+        .button_forgot_pass{
+            margin-top: 30px;
+            margin-bottom: 50px;
+            border-style: none;
+            background-color: white;
+            font-size: 32px;
+            color: #0f0f7e;
+        }
+        .button_registration{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: #2194dc;
+            font-size: 36px;
+            font-weight: bold;
+            border-style: none;
+            background-color: white;
+        }
+        .button_registration::before{
+            color: black;
+            content: "Не маєте облікового запису? ";
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div><img class="logo" src="img/Instagram_logo.png" alt="Instagram">
+            <input type="text" placeholder="Номер телефону, ім'я користувача або email">
+            <input type="password" placeholder="Пароль">
+            <input class="input_submit" type="submit" value="Увійти (variant 1: input submit)">
+            <button class="button_submit">Увійти (variant 2: button)</button>
+
+            <h2 class="h2_gray">АБО</h2>
+
+            <button class="button_facebook" name="login_via_Facebook" value="true">
+                <div class="div_button_facebook">
+                    <img src="img/facebook_logo.png" alt="Facebook">
+                    <p>&nbsp;&nbsp;</p>
+                    Увійти через Facebook
+                </div>
+            </button>
+
+            <button class="button_forgot_pass">Забули пароль?</button>
+
+        </div>
+
+    </form>
+    <form>
+        <button class="button_registration">Зареєструйтеся</button>
+    </form>
+</body>
+</html>
